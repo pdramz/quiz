@@ -54,11 +54,11 @@ function createQuestionElement(question) {
     console.log(questionsElements.innerHTML);
 
     //questionElement.appendChild(questionHeader);
-    questionElement.appendChild(questionText);
-    questionsElement.appendChild(questionElement);
-    //questionsElement.appendChild(listOfChoices);
+    questionElements.appendChild(questionText);
+    questionsElements.appendChild(questionElement);
+    questionsElements.appendChild(listofChoices);
 
     const createInput = document.createElement("input");
-    questionsElement.appendChild(createInput);
+    questionsElements.appendChild(createInput);
 }
 displayQuestions();
